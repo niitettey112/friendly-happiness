@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #174526;
+    --color:#DECE9C;
+    --hover-effect-color:#6ECF71;
+    --main-font: 'Cinzel Decorative', cursive;
+    --secondary-font: 'Delius', cursive;
+}
+
+body{
+    font-family: var(--secondary-font);
+    color: var(--color);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ------------ HEADER SECTION STYLE ---------------- */
+header{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/header.jpg);
+    background-size: cover;
+}
+
+nav{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2{
+    font-family: var(--main-font);
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-list ul li{
+    font-weight: 700;
+    padding: 1rem 3rem 1rem 3rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.nav-list ul li:hover{
+    border-radius: 20px;
+    background: var(--color);
+    color: var(--main-color);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content .main-text h1{
+    padding-bottom: 1.5rem;
+    font-size: 3.5rem;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+}
+
+.content .main-text span{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 510px;
+    height: 3px;
+    margin-top:10px ;
+    background: var(--color);
+}
+
+.content .main-text p{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    line-height: 2;
+}
+
+.content .main-text a{
+    background: var(--color);
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    color: var(--main-color);
+    border-radius: 20px;
+    transition: .5s ease;
+}
+
+.content .main-text a:hover{
+    background: var(--main-color);
+    color: var(--color);
+}
+
+/* ------------ HEADER SECTION STYLE ---------------- */
+
+
+/* ------------ ABOUT SECTION STYLE ---------------- */
+.about{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 85%;
+    background: var(--color);
+    color: var(--main-color);
+}
+
+.about .head-text{
+    text-align: center;
+    margin-top: 5.5rem;
+    padding-bottom: 2rem;
+}
+
+.about .head-text h2{
+    font-family: var(--main-font);
+    font-size: 30px;
+}
+
+.about-container{
+    display: flex;
+    margin: 2.5rem;
+}
+
+.about-container .about-box1{
+    margin: 0 2rem;
+    background: linear-gradient(145deg, #B5A87F, #FFF4B9);
+    border-radius: 20px;
+    box-shadow: 8.71px 8.71px 23px #B8AB81, -8.71px -8.71px 23px #FFF1B7;
+}
+
+.about-container .about-box1 .about-bx1-text{
+    padding: 2.5rem;
+}
+
+.about-container .about-box1 .about-bx1-text h2{
+    padding-bottom:2rem ;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+.about-container .about-box1 .about-bx1-text p{
+    line-height: 2;
+    font-weight: 700;
+}
+/* ------------ ABOUT SECTION STYLE ---------------- */
+
+/* ------------ SERVICE SECTION STYLE ---------------- */
+.service-container{
+    position: absolute;
+    top: 180%;
+    width: 100%;
+    height: 110%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    background: var(--main-color);
+}
+
+.service-container h3{
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.service-bx1.service-bx2.service-bx3.service-bx4, img{
+    width: 60px;
+}
+
+.service-bx{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.service-bx1{
+    margin: 1rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #153e22, #194a29);
+    box-shadow:  16px 16px 45px #0f2d19,
+             -16px -16px 45px #1f5d33;
+}
+.service-bx2{
+    margin: 1rem;
+    padding: 3rem 1rem;
+    text-align: center;    
+    border-radius: 50px;
+    background: linear-gradient(145deg, #153e22, #194a29);
+    box-shadow:  16px 16px 45px #0f2d19,
+             -16px -16px 45px #1f5d33;
+}
+.service-bx3{
+    margin: 1rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #153e22, #194a29);
+    box-shadow:  16px 16px 45px #0f2d19,
+             -16px -16px 45px #1f5d33;
+}
+.service-bx4{
+    margin: 1rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #153e22, #194a29);
+    box-shadow:  16px 16px 45px #0f2d19,
+             -16px -16px 45px #1f5d33;
+}
+
+
+.service-bx1 .service-bx2 .service-bx3 .service-bx4, h2{
+    font-family: var(--main-font);
+}
+
+.form-bx{
+    margin: 4rem;
+    padding: 3rem;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #153e22, #194a29);
+    box-shadow:  16px 16px 45px #0f2d19,
+             -16px -16px 45px #1f5d33;
+}
+
+.form-bx h4{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-family: var(--main-font);
+}
+
+.form-bx input{
+    width: 400px;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color);
+}
+
+.form-bx button{
+    margin: 2rem 9rem;
+    padding: 1rem 3rem;
+    border: 1px solid #DECE9C;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: var(--main-font);
+    color: #DECE9C;
+    background: var(--main-color);
+    transition: .5s ease-out;
+}
+
+.form-bx button:hover{
+    background: var(--color);
+    color: var(--main-color);
+}
+/* ------------ SERVICE SECTION STYLE ---------------- */
+
+.form-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 290%;
+    background: var(--color);
+}
+
+.form-box{
+    width: 35%;
+    margin-top: 5rem;
+    margin-left: 30rem;
+    padding-top: 2rem;
+    padding: 2rem;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #c8b98c, #eedca7);
+    box-shadow:  20px 20px 47px #81775a,
+             -20px -20px 47px #ffffde;
+}
+
+.form-box h3{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
+
+form input{
+    width: 400px;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+form button{
+    margin: 2rem 9rem;
+    padding: 1rem 3rem;
+    border: 1px solid #194a29;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: var(--main-font);
+    color: #DECE9C;
+    background: var(--main-color);
+    transition: .5s ease-out;
+}
+
+form button:hover{
+    background: var(--color);
+    color: var(--main-color);
+}
+
+footer{
+    position: absolute;
+    top: 385%;
+    width: 100%;
+    height: 30%;
+    color: var(--color);
+    background: var(--main-color);
+}
